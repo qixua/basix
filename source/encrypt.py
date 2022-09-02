@@ -17,15 +17,10 @@ def encrypt(string: str, keymap_path: str) -> str:
 
             if kc == c:
                 value_len = len(kv)
+                slide_amount += value_len - 1
 
-                if value_len == 1:
-                    encrypted = squeeze(
-                        put=kv, into=i + slide_amount + 1, at=encrypted)
-                else:
-                    slide_amount += value_len - 1
-
-                    encrypted = squeeze(
-                        put=kv, into=i + slide_amount, at=encrypted)
+                encrypted = squeeze(
+                    put=kv, into=i + slide_amount + (1 if value_len == 1 else 0), at=encrypted)
 
         slide_amount += 1
 
