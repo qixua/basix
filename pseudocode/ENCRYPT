@@ -1,0 +1,36 @@
+----------------------------------------------------------------------------------
+The pseudocode file for the encryption function of the Basix Encryption Algorithm.
+----------------------------------------------------------------------------------
+
+----------------
+TAKEINPUT STRING
+TAKEINPUT KEYMAP
+----------------
+
+
+CONSTANT LENGTH = LENGTHOF STRING
+ 
+IF STATE % 2 EQUALS 0 THEN
+    REASSIGN length_is_even = TRUE
+ENDIF
+
+VARIABLE encrypted = ""
+VARIABLE iter_idx = 0
+
+FOR char AND index IN STRING DO
+    FOR key in KEYMAP DO
+		IF key.char EQUALS char THEN
+		    SQUEEZE key.char INTO STRING ATINDEX index + 1 + iter_idx AND OUTPUTTO encrypted 
+		ENDIF
+    ENDFOR
+
+	iter_idx++
+ENDFOR
+
+REASSIGN encrypted = `${LENGTH}encrypted${LENGTH}`
+
+IF length_is_even THEN
+    APPEND "+" to encrypted
+ENDIF ELSE
+    APPPEND "-" to encrypted
+ENDELSE
