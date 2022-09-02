@@ -19,6 +19,12 @@ def encrypt(string: str, keymap_path: str) -> str:
                 value_len = len(kv)
                 slide_amount += value_len - 1
 
+                # that conditional addition is there
+                # because if value_len was 1
+                # 0 would be added to slide_amount (ref slide_amount += value_len -1)
+                # and it is not added as
+                # slide_amount += 1 if value_len == 1 else 0
+                # because slide_amount += 1 is already added at the end of the for loop every time
                 encrypted = squeeze(
                     put=kv, into=i + slide_amount + (1 if value_len == 1 else 0), at=encrypted)
 
