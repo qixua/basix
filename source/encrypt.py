@@ -8,27 +8,30 @@ def encrypt(string: str, keymap_path: str) -> str:
     KEYMAP = process_keymap(keymap_path)
     encrypted = string
 
-    slide_amount = 0
+    i = 0
+    char_i = 0
+    stop = False
 
-    for i, c in enumerate(string):
-        for k in KEYMAP:
-            kv = k["v"]
-            kc = k["c"]
+    while not stop:
+        if i == len(string) - 1:
+            for k in KEYMAP:
+                kv = k["v"]
+                kc = k["c"]
 
-            if kc == c:
-                value_len = len(kv)
-                slide_amount += value_len - 1
+                if kc == string[-1]:
+                    encrypted += kv
+                    stop = True
+        elif i < len(string) - 1:
+            for k in KEYMAP:
+                kv = k["v"]
+                kc = k["c"]
 
-                # that conditional addition is there
-                # because if value_len was 1
-                # 0 would be added to slide_amount (ref slide_amount += value_len -1)
-                # and it is not added as
-                # slide_amount += 1 if value_len == 1 else 0
-                # because slide_amount += 1 is already added at the end of the for loop every time
-                encrypted = squeeze(
-                    put=kv, into=i + slide_amount + (1 if value_len == 1 else 0), at=encrypted)
+                if char_i < len(encrypted) - 1 and kc == encrypted[char_i]:
+                    encrypted = squeeze(
+                        put=kv, into=char_i + 1, at=encrypted)
+                    char_i += len(kv) + len(kc)
 
-        slide_amount += 1
+                    i += 1
 
     encrypted = f"{LENGTH}{encrypted}{LENGTH}{'+' if LENGTH_IS_EVEN else '-'}"
 
