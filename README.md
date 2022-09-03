@@ -9,3 +9,18 @@
 <p align="center">
     A basic algorithm that helps you make your <br/> memorable passwords just a little bit more complex.
 </p>
+
+## Table of Contents
+
+- [Usage](https://github.com/qixua/basix#usage)
+- [Installation](https://github.com/qixua/basix#installation)
+- [Credits](https://github.com/qixua/basix#credits)
+- [Copyright](https://github.com/qixua/basix#copyright)
+
+## Usage
+
+## Installation
+
+## Credits
+
+## Copyright
