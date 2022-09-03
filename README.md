@@ -76,7 +76,7 @@
 
     **SYNTAX** `charX` must be only one letter. Support for multiple letter chars may come in future versions.
 
-    **SYNTAX** Seperate every mapping by newlines (`\n`) and do not add an empty line at the end of the file.
+    **SYNTAX** Seperate every mapping by newlines.
 
     You can name the file anything, add any extension to mask it as something else if you want. It doesn't matter if your file is `myfile.cock`, just input the absolute path. It just works.
 
