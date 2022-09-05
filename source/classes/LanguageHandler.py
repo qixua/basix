@@ -7,7 +7,7 @@ class LanguageHandler:
         return f"[{sep.join(self.languages)}]"
 
     def get_lang_and_text(self):
-        lang_options = self.format_languages()
+        lang_options = self.format_languages("/")
         self.language = ""
 
         while self.language not in self.languages:
