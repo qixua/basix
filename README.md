@@ -13,8 +13,8 @@
 ## Table of Contents
 
 - [Installation](https://github.com/qixua/basix#installation)
-  - *alt 1* :: Clone the git repository
-  - *alt 2* :: Use the UI of GitHub.
+  - *alternative 1* :: Clone the git repository
+  - *alternative 2* :: Use the UI of GitHub.
 - [Usage](https://github.com/qixua/basix#usage)
   - (i) Why use this at all?
   - (ii) Making a keymap and storing it
@@ -25,12 +25,12 @@
 
 **WARNING** This program does not work for Windows *yet*.
 
-- ### *alt 1* :: Clone the git repository
+- ### *alternative 1* :: Clone the git repository
     **In your terminal, run:**
     ```
     % git clone https://github.com/qixua/basix
     ```
-- ### *alt 2* :: Use the UI of GitHub.
+- ### *alternative 2* :: Use the UI of GitHub.
     **a. Go to https://github.com/qixua/basix**
 
     <img src="./assets/a.png" />
