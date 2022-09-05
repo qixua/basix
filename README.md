@@ -90,4 +90,4 @@
 
 
 ## Copyright
-The Basix repository and its code is licensed with GPL v3. Read the LICENSE file for details.
+The Basix repository and its code is licensed with GPL v3. Read the [LICENSE](https://github.com/qixua/basix/blob/master/LICENSE) file for details.
