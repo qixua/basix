@@ -58,7 +58,7 @@
     
    **What if my flash drive gets stolen?**
 
-   They would only know about your keymap. If you didn't have anything that can be traced back to you in the flash drive or if you picked a password that is not about anything about you like (hobbies, dislikes, etc.) that that keymap is not worth anything to the person who stole it.
+   They would only know about your keymap. If you didn't have anything that can be traced back to you in the flash drive or if you picked a password that is not about anything you like (hobbies, dislikes, etc.) then that keymap is not worth anything to the person who stole it.
 
 - ### (ii) Making a keymap and storing it
 
@@ -86,7 +86,7 @@
     % python3 source/script.py
     ```
 
-    And then just answer the prompt.
+    And then just answer the prompts.
 
 
 ## Copyright
