@@ -5,10 +5,11 @@ from classes.LanguageHandler import LanguageHandler
 from lang.eng import english
 from lang.fr import french
 from lang.es import spanish
+from lang.tr import turkish
 from lang.lang_list import lang_list
 
 BasixLangHandler = LanguageHandler(
-    lang_list, {"english": english, "français": french, "español": spanish})
+    lang_list, {"english": english, "français": french, "español": spanish, "türkçe": turkish})
 
 sections = BasixLangHandler.get_lang_and_text()
 

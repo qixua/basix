@@ -1,1 +1,1 @@
-lang_list = ["english", "français", "español"]
+lang_list = ["english", "français", "español", "türkçe"]
