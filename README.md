@@ -13,12 +13,12 @@
 ## Table of Contents
 
 - [Installation](https://github.com/qixua/basix#installation)
-  - *alternative 1* :: Clone the git repository
-  - *alternative 2* :: Use the UI of GitHub.
+  - [*alternative 1* :: Clone the git repository](https://github.com/qixua/basix#alternative-1--clone-the-git-repository)
+  - [*alternative 2* :: Use the UI of GitHub.](https://github.com/qixua/basix#alternative-2--use-the-ui-of-github)
 - [Usage](https://github.com/qixua/basix#usage)
-  - (i) Why use this at all?
-  - (ii) Making a keymap and storing it
-  - (iii) Running the program
+  - [(i) Why use this at all?](https://github.com/qixua/basix#i-why-use-this-at-all)
+  - [(ii) Making a keymap and storing it](https://github.com/qixua/basix#ii-making-a-keymap-and-storing-it)
+  - [(iii) Running the program](https://github.com/qixua/basix#iii-running-the-program)
 - [Copyright](https://github.com/qixua/basix#copyright)
 
 ## Installation
