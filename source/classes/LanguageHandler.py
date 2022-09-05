@@ -6,7 +6,7 @@ class LanguageHandler:
     def format_languages(self):
         formatted = ""
 
-        for i, lang in enumerate(self.languages):
+        for lang in self.languages:
             if lang != self.languages[-1]:
                 formatted += f"{lang}/"
             else:
