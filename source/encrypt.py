@@ -24,9 +24,16 @@ def encrypt(string: str, keymap_path: str) -> str:
                     char_i += len(kv) + len(kc)
 
                     i += 1
-                elif kc == string[-1]:
+        elif i == len(string) - 1:
+            for k in KEYMAP:
+                kv = k["v"]
+                kc = k["c"]
+
+                if kc == string[-1]:
                     encrypted += kv
                     stop = True
+                else:
+                    continue
 
     encrypted = f"{LENGTH}{encrypted}{LENGTH}{'+' if LENGTH_IS_EVEN else '-'}"
 
